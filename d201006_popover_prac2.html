@@ -10,11 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body><a href="./">
-        <h2>GO back to Bootstrap</h1>
+        <h2>GO back to Bootstrap <i class="fa fa-car"></i></h1>
     </a>
 
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -27,9 +27,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Enter check payment</h5>
+            
+                    
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"> &times;</span>
                     </button>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-spinner fa-spin"></i> </span>
+                    </button>
+                    
                 </div>
                 <div class="modal-body">
 
@@ -50,9 +57,7 @@
                         </div>
                         
                        <div class="form-group">
-                            <label for="">Routing number <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-title="The first 9 digits in the bottom left of the check" data-content=":XXXXXXXXXX">
-        iii
-    </button>  </label>
+                            <label for="">Routing number <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-title="The first 9 digits in the bottom left of the check" data-content=":XXXXXXXXXX">ⓘ</button>  </label>
                             <input type="text" class="form-control" aria-describedby="name" placeholder="Enter number">
                         </div>
                         
