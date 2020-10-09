@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Popover Example</h3>
+        <h3>data-trigger="focus" , "hover" - add better closing</h3>
+
+
+        <p><b>Closing Popovers </b>-
+            By default, the popover is closed when you click on the element again. However, you can use the data-trigger="focus" attribute which will close the popover when clicking outside the element:</p>
+        <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me. close on focus-out</a> <br>
+        
+        <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">popover - with data-trigger- focus</button> <br>
+        
+        
+        <br>
+
+        <p><b>Hover - </b>If you want the popover to be displayed when you move the mouse pointer over the element, use the data-trigger attribute with a value of "hover":</p>
+
+        <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me - close on hover-out</a> <br>
+        
+        <button type="button" class="btn btn-sm btn-primary" data-toggle="popover" data-trigger="hover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">popover - with data-trigger- hover</button> <br>
+        <br><br>
+
+        <p><b>Positioning Popovers </b>-
+            By default, the popover will appear on the right side of the element.
+            <br>Use the data-placement attribute to set the position of the popover on top, bottom, left or the right side of the element:</p>
+
+<center>
+        <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Click data-placement="top"</a><br>
+        <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Click  data-placement="bottom"</a><br>
+        <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click data-placement="left"</a><br>
+        <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click data-placement="right"</a>
+</center>
+        <hr>
+
+        <h3>popover part - default stuff - (click button to close. annoying.)</h3>
+<center>
+        <button type="button" class="btn btn-sm btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">popover - default - right</button> <br>
+
+
+        <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on top
+        </button> <br>
+
+        <button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on right
+        </button> <br>
+
+        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on bottom
+        </button> <br>
+
+        <button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on left
+        </button> <br>
+</center>
+     
+
+
+
+
+
+
+
+
+
+    </div>
+<br><br><br>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body></html>
