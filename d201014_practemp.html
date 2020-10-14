@@ -9,47 +9,95 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
+  .affixTop {
     top: 0;
     width: 100%;
     z-index: 9999 !important;
   }
 
-  .affix + .container-fluid {
+  .affixTop + .container-fluid {
     padding-top: 70px;
   }
+
+  .affixLeft {
+    top: 100px;
+    z-index: 9999 !important;
+  }    
+      
   </style>
 </head>
 <body>
 
-<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
-  <h1>Bootstrap Affix Example</h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+<div class="container-fluid" style="background-image: url('./food2/b4.jpg');height:200px;">
+  <h1>Welcome to Chai Bar</h1>
+  <h2>Food for soule.</h2>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+<nav class="navbar navbar-inverse affixTop" data-spy="affix" data-offset-top="197">
   <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Basic Topnav</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li>
-    <li><a href="#">Page 3</a></li>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Breakfast</a></li>
+    <li><a href="#">Lunch</a></li>
+    <li><a href="#">Dinner</a></li>
   </ul>
 </nav>
 
-<div class="container-fluid" style="height:1000px">
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
+<div class="container">
+  <div class="row ">
+    <nav class="col-sm-3 ">
+      <ul class="nav nav-pills nav-stacked affixLeft" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        
+      </ul>
+    </nav>
+    <div class="col-sm-9">   
+
+      <h1 id="section1">YOLO 11 section1</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1 id="section2">YOLO222 section2</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1>YOLO</h1>
+      <h1 id="section3">YOLO333 section3</h1>
+      <h1>YOLO</h1>
+    
+    </div>
+  </div>
 </div>
 
 </body>
