@@ -12,7 +12,7 @@
   .affixTop {
     top: 0;
     width: 100%;
-    z-index: 9999 !important;
+    z-index: 99 !important;
   }
 
   .affixTop + .container-fluid {
@@ -21,7 +21,13 @@
 
   .affixLeft {
     top: 100px;
-    z-index: 9999 !important;
+    width: 150px;
+    z-index: 2 !important;
+    background-color:pink; 
+    overflow-y:scroll;
+    overflow-x:hidden;
+      
+    padding-top:5px;
   }    
       
   </style>
@@ -44,7 +50,7 @@
 
 <div class="container">
   <div class="row ">
-    <nav class="col-sm-3 ">
+    <nav class="col-sm-3">
       <ul class="nav nav-pills nav-stacked affixLeft" data-spy="affix" data-offset-top="205">
         <li class="active"><a href="#section1">Section 1</a></li>
         <li><a href="#section2">Section 2</a></li>
@@ -59,19 +65,25 @@
         <li><a href="#section3">Section 3</a></li>
         <li><a href="#section2">Section 2</a></li>
         <li><a href="#section3">Section 3</a></li>
-        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section2">Section 222</a></li>
         <li><a href="#section3">Section 3</a></li>
         <li><a href="#section2">Section 2</a></li>
         <li><a href="#section3">Section 3</a></li>
         <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section3">Section 33</a></li>
         <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section3">Section 3last</a></li>
         
       </ul>
     </nav>
     <div class="col-sm-9">   
 
+        
+<button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+  Place Order
+</button>
+      
+        
       <h1 id="section1">YOLO 11 section1</h1>
       <h1>YOLO</h1>
       <h1>YOLO</h1>
@@ -81,6 +93,42 @@
       <h1>YOLO</h1>
       <h1>YOLO</h1>
       <h1>YOLO</h1>
+        
+           
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+         <h1 class="modal-title" id="exampleModalLongTitle">Sign in to place order</h1>
+          <p>Get attractive offeres!</p>
+          
+          <button type="button" class="btn btn-info w-75" data-dismiss="modal"><i class="fa fa-facebook-square" style="font-size:24px"></i> Continue with Google</button>
+          
+          <br><br>
+          <p>We'll never post without your permission</p>
+          
+          <h5>OR</h5>
+          
+          <form>
+          <label>Enter your email:</label> <br>
+              <input type="text"> <br><br>
+               <button type="button" class="btn btn-info w-75" data-dismiss="modal">Continue</button>
+          </form>
+          
+          Have and account? <a href=#> Sign in</a>
+          
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+        
+        
+        
       <h1 id="section2">YOLO222 section2</h1>
       <h1>YOLO</h1>
       <h1>YOLO</h1>
