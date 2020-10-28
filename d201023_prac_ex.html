@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap stuff by BK</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body><a href="./">
+        <h6>GO back to Bootstrap <i class="fa fa-car"></i></h6>
+    </a><br><br>
+    
+    <div class="container">
+    <button type="button" class="btn btn-primary btn-lg" >
+        <span class="glyphicon glyphicon-download"></span> Download</button>
+        
+    <button type="button" class="btn btn-secondary btn-lg" data-container="body" data-toggle="popover" data-placement="bottom">
+        <span class="glyphicon glyphicon-play"></span>Demo</button>
+        <br><br>
+    
+        
+    
+    <ul class="nav nav-pills bg-transparent nav-justified-left">
+    <li class="nav-item">
+        <a class="nav-link" href=#>GitHub Project</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href=#>Version Info</a>
+    </li>
+    </ul>  
+    
+    
+    
+    </div>
+    
+<script>
+$(document).ready(function () {
+$('[data-toggle="popover"]').popover({
+placement: "bottom",
+html: true,
+title:
+'Welcome to Bootstrap Tour!',
+content:
+'Introduce new users to your product by walking them through it step by step. Build on the aweome <a href=""> Bootstrap from Twitter.</a> <br><a href="" class="btn btn-secondary ">« Prev</a> <a href="" class="btn btn-secondary ">Next »</a><a href="" class="btn btn-secondary nav nav-pills" >End tour</a>'
+});
+});
+</script>
+    </body></html>

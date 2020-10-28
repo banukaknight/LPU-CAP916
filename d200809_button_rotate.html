@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap test</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.min.css">
+
+<style>
+    .rotdefalt {
+        writing-mode: vertical-lr; 
+		text-orientation: sideways; 
+    }
+    
+	.rotupward {
+		writing-mode: vertical-lr; 
+		text-orientation: sideways; 
+		transform: rotate(-180deg);
+	}
+</style>
+</head>
+
+<body><a href="./"><h2>GO back to Bootstrap</h1></a>
+<h1> Rotate buttons.</h1>
+<div class="container">
+
+
+
+
+<p>grouped Buttons - default rotate top to botm - no transform</p>
+<div class="btn-group" role="group" >
+<button type="button" class="btn btn-primary"><span class="rotdefalt">Primary</span></button>
+<button type="button" class="btn btn-danger"><span class="rotdefalt">Primary</span></button>
+<button type="button" class="btn btn-warning"><span class="rotdefalt">Primary</span></button>
+</div>
+    
+<p>grouped Buttons - with transform </p>
+<div class="btn-group" role="group" >
+<button type="button" class="btn btn-primary"><span class="rotupward">Primary</span></button>
+<button type="button" class="btn btn-danger"><span class="rotupward">Primary</span></button>
+<button type="button" class="btn btn-warning"><span class="rotupward">Primary</span></button>
+</div>
+
+    
+<br><br></p>grouped Buttons verticle - bottom to top - no transform</p>
+<div class="btn-group-vertical  " role="group" >
+<button type="button" class="btn btn-success "><span class="rotdefalt">Primary</span></button>
+<button type="button" class="btn btn-danger"><span class="rotdefalt">Primary</span></button>
+<button type="button" class="btn btn-warning"><span class="rotdefalt">Primary</span></button>
+</div>
+    
+<br><br></p>grouped Buttons verticle - bottom to top - with transform</p>
+<div class="btn-group-vertical  " role="group" >
+<button type="button" class="btn btn-success "><span class="rotupward">Primary</span></button>
+<button type="button" class="btn btn-danger"><span class="rotupward">Primary</span></button>
+<button type="button" class="btn btn-warning"><span class="rotupward">Primary</span></button>
+</div>
+
+
+<br><br><br><br><br><br>
+</div>
+
+</body>
+</html>

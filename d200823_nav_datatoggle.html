@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>navtab-ddown</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<link rel="stylesheet" href="js/bootstrap_v3.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap_v3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.min.css">
+    <!-- bootstrap 3 online needed for glyph icon to work -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+	body {background-color: powderblue;}
+	body {color:blue;}
+    p {color:green;}
+</style>
+</head>
+
+<body><a href="./"><h2>GO back to Bootstrap</h1></a>
+    
+    <p>to make the tabs toggleble, add the data-toggle="tab" attrobute to each link. then add a .tab-pane class with a unique id for every tab and weap them inside a dive element with a class .tab-content</p>
+    
+    
+    <p>ul class: nav nav-pills mb-3</p>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item ">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade container " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><h2>Home stuff</h2><p>para in home stuff</p></div>
+    
+  <div class="tab-pane fade container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><h2>pro stuff</h2><p>para in pro stuff</p></div>
+    
+  <div class="tab-pane fade container" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><h2>cont stuff</h2><p>para in cont stuff</p></div>
+</div> 
+    
+    <p>----------the end--------</p>
+    
+    
+    </body>
+</html>
