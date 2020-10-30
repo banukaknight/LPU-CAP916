@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="typeahead/script.js">
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="typeahead/style.css" />
+
+</head>
+
+<body>
+<div class="container">
+<h1>Bootstrap 3 and typeahead</h1>
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active">
+<a href="#tab1" data-toggle="tab">Section 1</a>
+</li>
+<li>
+<a href="#tab2" data-toggle="tab">Section 2</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<div class="well">
+<form role="form">
+<div class="form-group">
+<input class="form-control" id="states_search" type="text" placeholder="States of USA">
+</div>
+</form>
+</div>
+</div>
+<div class="tab-pane" id="tab2">
+<div class="well">
+<form role="form">
+<div class="form-group">
+<input type="text" class="form-control" id="city" placeholder="type whatever you want">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
+
+<script >
+$(document).ready(function() {
+
+var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+];
+
+var cities = ['Pontevedra', 'A Coruña', 'Lugo', 'Ourense'];
+
+$('#city').typeahead({
+source: cities
+});
+
+
+$('#states_search').typeahead({
+source: states
+});
+});
+</script>

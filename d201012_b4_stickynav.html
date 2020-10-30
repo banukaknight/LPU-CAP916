@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <style>
+  #navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example - only b3</h1>
+  <h3>Fixed (sticky) navbar on scroll</h3>
+  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+</div>
+
+<nav id="navbar" class="navbar navbar-inverse navbar-expand" >
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Basic Topnav</a></li>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="height:1000px">
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+</div>
+<script>window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}</script>
+</body>
+</html>
